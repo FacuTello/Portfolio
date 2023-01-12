@@ -128,5 +128,36 @@ body{
     margin-bottom: 20px;
   }
 
+  a{
+    text-decoration: none;
+    text-decoration-line: none;
+    cursor: pointer;
+  }
+  .aboutMeText{
+    font-family: 'Satisfy', cursive;
+    color: red;
+    font-size: 30px;
+    margin: 40px 20px 20px 30px;
+    text-align: center;
+    
+  }
+  .aboutMeContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90vw;
+}
+.aboutMeTitle{
+  text-align: center;
+  color: white;
+  font-weight: 900;
+    font-size: 60px;
+    letter-spacing: 2px;
+    font-family: 'Anton', sans-serif;
+    margin: 0;
+    padding: 0;
+    animation: aparecer-desde-abajo 1s ease-in-out;
+}
+
 
   
