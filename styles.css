@@ -111,12 +111,11 @@ body{
      color: white;
      font-size: 40px;
      font-family: 'Josefin Sans', sans-serif;
-     margin-bottom: 10px;
-  }
+     
+  } 
   .title-description{
      color: red;
      font-size: 30px;
-     margin-top: 0px;
   }
   .button-projects{
     background-color: white;
@@ -134,8 +133,8 @@ body{
     cursor: pointer;
   }
   .aboutMeText{
-    font-family: 'Satisfy', cursive;
-    color: red;
+    font-family: 'Itim', cursive;
+    color:  white;
     font-size: 30px;
     margin: 40px 20px 20px 30px;
     text-align: center;
@@ -146,10 +145,12 @@ body{
     flex-direction: column;
     justify-content: center;
     width: 90vw;
+    align-items: center;
+    
 }
 .aboutMeTitle{
   text-align: center;
-  color: white;
+  color:  red;
   font-weight: 900;
     font-size: 60px;
     letter-spacing: 2px;

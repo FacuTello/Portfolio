@@ -38,6 +38,27 @@ function backMain(){
      }
 }
 
+const linkAbout = document.querySelector('#aboutMe-link');
+const sectionAbout = document.querySelector('#aboutMeSection');
+linkAbout.addEventListener('click', aboutMe);
+
+function aboutMe(){
+    if(originalPresentation.classList.contains('desactive')){
+        modifiedPresentation.classList.add('desactive');
+        sectionAbout.classList.remove('desactive');
+    }
+}
+
+aboutMeButton = document.querySelector('#aboutMeButton');
+aboutMeButton.addEventListener('click', toggleAbout);
+
+function toggleAbout(){
+   if(sectionAbout.classList.contains('aboutMe')){
+    sectionAbout.classList.add('desactive');
+    modifiedPresentation.classList.replace('desactive', 'second-presentation-container');
+    }
+} 
+
 
 
 
