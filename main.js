@@ -59,6 +59,27 @@ function toggleAbout(){
     }
 } 
 
+const linkLanguage = document.querySelector('#language-link');
+const sectionLanguage = document.querySelector('#languageSection');
+linkLanguage.addEventListener('click', languageEnter);
+
+function languageEnter(){
+    if(originalPresentation.classList.contains('desactive')){
+        modifiedPresentation.classList.add('desactive');
+        sectionLanguage.classList.remove('desactive');
+    }
+}
+
+const languageButton = document.querySelector('#languageButton');
+languageButton.addEventListener('click', toggleLanguage);
+
+function toggleLanguage(){
+    if(sectionLanguage.classList.contains('languagues-section')){
+        sectionLanguage.classList.add('desactive');
+        modifiedPresentation.classList.replace('desactive', 'second-presentation-container');
+    }
+}
+
 
 
 
