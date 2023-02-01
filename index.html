@@ -36,7 +36,7 @@
         <p class="presentation-text" id="project-link">Proyectos</p>
         <p class="presentation-text" id="aboutMe-link">Sobre mi</p>
         <p class="ocupation-text" id="language-link">Lenguajes</p>
-        <p class="ocupation-text">Contacto</p>
+        <p class="ocupation-text" id="contact-link">Contacto</p>
         <button class="cta" id="button2">
             <span class="hover-underline-animation">Toca para mas informacion</span>
             <svg viewBox="0 0 46 16" height="10" width="30" xmlns="http://www.w3.org/2000/svg" id="arrow-horizontal">
@@ -68,21 +68,24 @@
         </div>
     </section>
     <section class="languagues-section desactive" id="languageSection">
-        <h1 class="presentation-text">Lenguajes Aprendidos</h1>
         <div class="languaguesContainer">
-            <img src="/html.png"  class="languageImage" >
-            <img src="./css.png" class="languageImage" >
-            <img src="./js.png" class="languageImage" >
-            <img src="./githubimage.png" alt="logo github" class="gitHubImage" >
+    <h1 class="presentation-text">Lenguajes Aprendidos</h1>
+        <div class="languageImages">
+            <img src="html.png"  class="languageImage" alt="logo html"  >
+            <img src="./css.png" class="languageImage" alt="logo css" >
+            <img src="./js.png" class="languageImage" alt="logo javascript" >
+            <img src="./githubimage.png" alt="logo github" class="logo github" >
         </div>
-        <button class="button-projects" id="languageButton"> atras</button>
+        <button class="button-projects" id="languageButton">atras</button>
+        </div>
     </section>
-        
-        
-
-
-    
-
+    <section class="desactive" id="sectionContact">
+        <h1 class="presentation-text"> Contactame..</h1>
+        <p class="aboutMeText">Podes contactarme por cualquiera de estas vias. Hace click en la imagen y enviame un mensaje..</p>
+        <img src="./twitter.png" class="contactImages" alt="logo twitter" >        
+        <img src="./linkedin.png" class="contactImages" alt="logo linkedin" >
+        <button class="button-projects" id="contactButton">atras</button> 
+    </section>
 <script src="./main.js"> </script>
 </body>
 </html>

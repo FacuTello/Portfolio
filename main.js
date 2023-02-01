@@ -80,6 +80,27 @@ function toggleLanguage(){
     }
 }
 
+const linkContact = document.querySelector('#contact-link');
+const sectionContact = document.querySelector('#sectionContact');
+linkContact.addEventListener('click', contactEnter);
+
+function contactEnter(){
+    if(originalPresentation.classList.contains('desactive')){
+        modifiedPresentation.classList.add('desactive');
+        sectionContact.classList.replace('desactive', 'contactSection');
+    }
+}
+
+const contactButton = document.querySelector('#contactButton');
+contactButton.addEventListener('click', toggleContact);
+
+function toggleContact(){
+    if(sectionContact.classList.contains('contactSection')){
+        sectionContact.classList.add('desactive');
+        modifiedPresentation.classList.replace('desactive', 'second-presentation-container');
+    }
+}
+
 
 
 
