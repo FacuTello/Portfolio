@@ -87,7 +87,7 @@ linkContact.addEventListener('click', contactEnter);
 function contactEnter(){
     if(originalPresentation.classList.contains('desactive')){
         modifiedPresentation.classList.add('desactive');
-        sectionContact.classList.replace('desactive', 'contactSection');
+        sectionContact.classList.add('contact-section');
     }
 }
 
@@ -95,8 +95,8 @@ const contactButton = document.querySelector('#contactButton');
 contactButton.addEventListener('click', toggleContact);
 
 function toggleContact(){
-    if(sectionContact.classList.contains('contactSection')){
-        sectionContact.classList.add('desactive');
+    if(sectionContact.classList.contains('contact-section')){
+        sectionContact.classList.replace('contact-section','desactive');
         modifiedPresentation.classList.replace('desactive', 'second-presentation-container');
     }
 }
